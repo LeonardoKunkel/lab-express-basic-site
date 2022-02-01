@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/home', (req, res) => {
-    res.send('Hello World!')
+router.get('/', (req, res) => {
+    res.render('home')
 });
 router.get('/about', (req, res) => {
-    res.send('Hello World!')
+    res.render('about')
 });
 router.get('/works', (req, res) => {
-    res.send('Hello World!')
+    res.render('works')
 });
 router.get('/gallery', (req, res) => {
-    res.send('Hello World!')
+    res.render('gallery')
 });
 
 module.exports = router
